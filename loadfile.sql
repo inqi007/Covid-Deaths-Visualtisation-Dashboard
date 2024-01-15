@@ -1,0 +1,4 @@
+LOAD DATA LOCAL INFILE "Downloads/owid-covid-data.csv" 
+INTO TABLE coviddeaths 
+FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n' 
+IGNORE 1 ROWS;
